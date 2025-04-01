@@ -5,13 +5,13 @@ import json
 import paho.mqtt.client as mqtt
 
 # --- Unique ID and MQTT topic ---
-id = "uidthinghere"
+id = "jarvy-76f3"
 client_name = id + "_temperature_client"
 telemetry_topic = id + "/telemetry"
 
 # --- MQTT Setup ---
 mqtt_client = mqtt.Client(client_name)
-mqtt_client.connect("test.mosquitto.org")
+mqtt_client.connect("192.168.28.183")
 mqtt_client.loop_start()
 print("MQTT connected!")
 
