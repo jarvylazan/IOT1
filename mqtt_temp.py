@@ -5,12 +5,12 @@ import paho.mqtt.client as mqtt
 from gpiozero import LED
 
 # --- Setup unique ID ---
-id = "your-unique-id-here"  # Replace this with a GUID or something unique
+id = "jarvy-76f3"  # Replace this with a GUID or something unique
 client_name = id + "_temperature_client"
 
 # --- MQTT Setup ---
 mqtt_client = mqtt.Client(client_name)
-mqtt_client.connect("test.mosquitto.org")
+mqtt_client.connect("192.168.28.183")
 mqtt_client.loop_start()
 print("MQTT connected!")
 
